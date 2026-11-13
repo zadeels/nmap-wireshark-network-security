@@ -41,11 +41,10 @@ The initial assessment identified SSH and HTTP as open, while HTTPS was closed. 
 
 ## Project Documentation
 
-- [Full Network Security Assessment Report](<network security project/report/Cybersecurity Portfolio Project Nmap:Wireshark Zade Elsaddik.pdf>)
+- [Full Network Security Assessment Report](network%20security%20project/report/Cybersecurity%20Portfolio%20Project%20Nmap%3AWireshark%20Zade%20Elsaddik.pdf)
 - [Screenshots and Packet Analysis Evidence](network%20security%20project/screenshots/)
 - [Nmap Scan Results](network%20security%20project/scans/)
 - [Lab Notes](network%20security%20project/notes/lab-notes.txt)
-
 ## Limitations
 
 The assessment was conducted in an isolated virtual lab environment and focused on three TCP ports. No vulnerability exploitation, UDP scanning, or application-level security testing was performed.
