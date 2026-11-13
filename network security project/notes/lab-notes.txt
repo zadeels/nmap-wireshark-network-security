@@ -1,0 +1,14 @@
+Date - 12/11/2026
+Ubuntu Version - 26.04.1
+VMWare Network Type - Host Only
+Windows Host IP - 192.268.91.1
+Ubuntu VM IP - 192.168.91.131
+
+Port    Nmap state    Detected service    Expected?
+22    open    ssh    Yes
+80    open    http    Yes
+443    closed    https    Yes
+
+Nmap reported TCP port 80 as open because the Ubuntu VM accepted the TCP connection, responding to the initial SYN packet with SYN-ACK and completing the three-way handshake. In contrast, port 443 was reported as closed because Ubuntu responded to the connection attempt with RST-ACK, indicating that no service was accepting connections on that port. These responses were observed in Wireshark and explain the different port states identified by Nmap.
+
+Following the implementation of UFW firewall restrictions, Wireshark captured repeated TCP SYN packets from the Windows host to the Ubuntu VM on port 80, without any corresponding SYN-ACK or RST responses. This behaviour was consistent with Nmap reporting the port as filtered. Compared with the initial capture, where the TCP handshake completed successfully, the results demonstrate that the firewall restrictions prevented inbound HTTP connections.

@@ -1,0 +1,10 @@
+# Nmap 7.993 scan initiated Thu Nov 12 22:39:55 2026 as: Z:\\nmap\\nmap.exe -sT -Pn -p 22,80,433 --reason -oN scans/after-firewall.txt 192.168.91.131
+Nmap scan report for 192.168.91.131
+Host is up, received user-set (0.0010s latency).
+
+PORT    STATE    SERVICE REASON
+22/tcp  open     ssh     syn-ack
+80/tcp  filtered http    no-response
+433/tcp filtered nnsp    no-response
+
+# Nmap done at Thu Nov 12 22:39:58 2026 -- 1 IP address (1 host up) scanned in 3.56 seconds
