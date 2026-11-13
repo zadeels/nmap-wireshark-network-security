@@ -41,7 +41,7 @@ The initial assessment identified SSH and HTTP as open, while HTTPS was closed. 
 
 ## Project Documentation
 
-- [Full Network Security Assessment Report](network%20security%20project/report/network-security-assessment.pdf)
+- [Full Network Security Assessment Report](<network security project/report/Cybersecurity Portfolio Project Nmap:Wireshark Zade Elsaddik.pdf>)
 - [Screenshots and Packet Analysis Evidence](network%20security%20project/screenshots/)
 - [Nmap Scan Results](network%20security%20project/scans/)
 - [Lab Notes](network%20security%20project/notes/lab-notes.txt)
